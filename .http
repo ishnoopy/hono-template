@@ -1,0 +1,44 @@
+http://localhost:3000/api/users?name=John&age=30
+
+###
+http://localhost:3000/api/users/1
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Authorization: Bearer 123456
+
+{
+  "name": "John",
+  "age": 30
+}
+
+###
+PUT http://localhost:3000/api/users/1
+Content-Type: application/json
+Authorization: Bearer 123456
+
+{
+  "name": "Randy",
+  "age": 25
+}
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+	"email": "aldringuasa1@gmail.com",
+	"password": "12345678"
+}
+
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+	"email": "aldringuasa1@gmail.com",
+	"password": "12345678",
+  "first_name": "Aldrin",
+  "last_name": "Guasa"
+}
